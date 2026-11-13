@@ -82,6 +82,15 @@ public class test {
 			System.out.println("Probably shouldn't move the car when it's standing still, but here we are.");
 		}
 
+		// check if one left turn from north faces west
+		Volvo240 volvo6 = new Volvo240();
+		volvo6.turnLeft();
+		if (volvo6.getCurrentDirection().equals("west")) {
+			System.out.println("Success: Turning left from north faces west.");
+		} else {
+			throw new AssertionError("Turning left from north should face west.");
+		}
+
 		volvo.stopEngine();
 
 
