@@ -83,9 +83,8 @@ public abstract class Car implements Movable {
 	public void gas(double amount) {
 		incrementSpeed(clamp(amount));
 	}
-	public double brake(double amount) {
+	public void brake(double amount) {
 		decrementSpeed(clamp(amount));
-		return amount;
 	}
 
 	public double getCurrentX() {
