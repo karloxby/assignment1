@@ -1,4 +1,4 @@
-public class test {
+public class Test {
 	public static void main(String[] args) {
 
 		Saab95 saab = new Saab95();
